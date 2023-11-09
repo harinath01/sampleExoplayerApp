@@ -35,13 +35,18 @@ android {
     }
 }
 
-val mediaVersion = "1.0.2"
+val exoplayerVersion = "2.18.7"
+val mediaVersion = "1.1.1"
 dependencies {
     api("androidx.media3:media3-exoplayer:$mediaVersion")
     api("androidx.media3:media3-ui:$mediaVersion")
     api("androidx.media3:media3-exoplayer-dash:$mediaVersion")
     api("androidx.media3:media3-exoplayer-hls:$mediaVersion")
     api("androidx.media3:media3-datasource-okhttp:$mediaVersion")
+
+//    api("com.google.android.exoplayer:exoplayer-core:$exoplayerVersion")
+//    api("com.google.android.exoplayer:exoplayer-dash:$exoplayerVersion")
+//    api("com.google.android.exoplayer:exoplayer-ui:$exoplayerVersion")
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
@@ -50,4 +55,6 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    implementation("com.tpstreams.player:player:1.0.14b")
 }
